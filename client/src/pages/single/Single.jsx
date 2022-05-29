@@ -1,0 +1,16 @@
+import Sidebar from "../../components/sidebar/Sidebar"
+import SinglePost from "../../components/singlePost/SinglePost"
+import "./single.scss"
+
+
+function Single() {
+  return (
+    <div className="single">
+
+        <SinglePost></SinglePost>
+        <Sidebar></Sidebar>        
+    </div>
+  )
+}
+
+export default Single

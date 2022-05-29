@@ -1,0 +1,128 @@
+.settings {
+  display: flex;
+  &-wrapper {
+    flex: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+    &_title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__update {
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+     
+    }
+
+    .settings-form {
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      background: #242526;
+      padding: 50px;
+      border-radius: 10px;
+      border: 1px solid #393a3b;
+      &_profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+
+        img {
+          height: 120px;
+          width: 120px;
+          border-radius: 20px;
+          object-fit: cover;
+          margin-bottom: 50px;
+        }
+      }
+
+      &_profile-icon {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: #aaa;
+        text-align: center;
+        line-height: 25px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+
+      & > label {
+        font-size: 20px;
+        margin-top: 20px;
+        align-self: center;
+      }
+      & > input {
+        color: #b0b3b8;
+        margin: 10px 0;
+        height: 30px;
+        border: none;
+        width: 50%;
+        align-self: center;
+        padding: 20px 10px;
+        background: #3a3b3c;
+        border-radius: 10px;
+        &::placeholder{
+            color:#b0b3b8;
+        }
+      }
+
+      &_submit {
+        width: 150px;
+        align-self: center;
+        border: none;
+        margin-top: 30px;
+        background: rgb(63, 63, 63);
+        color: #fff;
+        padding: 10px 10px;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+ 
+.message {
+  margin-top: 20px;
+  -webkit-animation: seconds 1.0s forwards;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 2s;
+  animation: seconds 1.0s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  position: relative;
+}
+@-webkit-keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px; 
+  }
+}
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px; 
+  }
+}

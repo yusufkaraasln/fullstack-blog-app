@@ -1,0 +1,108 @@
+.singlePost {
+  flex: 9;
+
+  &-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    &__title {
+      border-bottom: 1px solid #393a3b;
+      text-align: center;
+      padding: 0 0 10px 0;
+      margin: 10px;
+      font-size: 28px;
+      &__edit {
+        float: right;
+        font-size: 1.5rem;
+        .singlePost-icon {
+          margin-left: 10px;
+          cursor: pointer;
+          color: rgb(143, 143, 143);
+          &:last-child {
+            color: rgb(136, 136, 136);
+          }
+        }
+      }
+    }
+
+    &__info {
+      display: flex;
+      width: max-content;
+      margin-bottom: 20px;
+      justify-content: center;
+      flex-direction: column;
+      background: #3a3b3c;
+
+      align-self: flex-end;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #b39656;
+      b {
+        margin-left: 5px;
+      }
+    }
+
+    &__description {
+      color: #666;
+      font-size: 18px;
+      width: 980px;
+      word-wrap: break-word;
+      height: 100%;
+
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      line-height: 30px;
+      &::first-letter {
+        margin-left: 20px;
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+//güncelleme modu
+.singlePost-wrapper__input {
+  margin: 50px 10px;
+  font-size: 28px;
+  background: #3a3b3c;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #b0b3b8;
+}
+
+.singlePost-wrapper__description__input {
+  margin: 0 10px;
+  font-size: 28px;
+  background: #3a3b3c;
+  border: none;
+  padding: 10px;
+  height: 300px;
+  border-radius: 10px;
+  color: #b0b3b8;
+  resize: none;
+}
+
+.singlePost-wrapper__button {
+  border: none;
+  margin-top: 30px;
+  background: teal;
+  width: 200px;
+  padding: 25px 0;
+
+  color: #b0b3b8;
+  background-color: #3a3b3c;
+  border-radius: 30px;
+  cursor: pointer;
+  align-self: center;
+}

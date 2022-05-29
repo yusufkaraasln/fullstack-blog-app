@@ -1,0 +1,86 @@
+.register {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    &-title {
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 50px;
+      background: #242526;
+
+      width: 100%;
+    }
+  
+    &-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 20px;
+      padding: 20px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #242526;
+
+  
+      & > label {
+        text-align: center;
+        color: rgb(179, 179, 179);
+
+        margin: 10px;
+        width: 300px;
+        &:last-child {
+          margin-top: 2px;
+        }
+      }
+      & > input {
+        width: 300px;
+        border: none;
+        padding: 10px;
+        background-color: rgb(77, 77, 77);
+        border-radius: 20px;
+        color: rgb(255, 255, 255);
+        &::placeholder {
+          color: rgb(139, 139, 139);
+        }
+      }
+  
+      &-button {
+        padding: 10px 40px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background: #18191a;
+        color: #fff;
+        &:disabled{
+          cursor: not-allowed;
+          opacity: 0.5;
+        }
+      }
+    }
+  
+    &_login-button {
+      align-self: center;
+      border: none;
+      padding:  10px 30px;
+      color: #fff;
+      border-radius: 10px;
+      background: #000;
+      cursor: pointer;
+    }
+  }
+  
+
+  .buttons{
+    margin: 40px 0;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
